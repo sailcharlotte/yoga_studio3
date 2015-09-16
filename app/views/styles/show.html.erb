@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @style.name %>
+</p>
+
+<%= link_to 'Edit', edit_style_path(@style) %> |
+<%= link_to 'Back', styles_path %>
+
+<p><strong>Students assinged to the Style:</strong>
+  <ul>
+    <% @style.students.each do |student| %>
+      <li><%= students.name %></li>
+    </ul>
+<% end %>
+
+</p>
